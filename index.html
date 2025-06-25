@@ -41,7 +41,7 @@
 
       <div class="profile-img">
         <img
-          src="assets/img/propic.jpg"
+          src="assets/img/propic2.jpg"
           alt=""
           class="img-fluid rounded-circle" />
       </div>
@@ -165,7 +165,7 @@
           <div class="row gy-4 justify-content-center">
             <div class="col-lg-4">
               <div class="circular-mask">
-                <img src="assets/img/propic.jpg" class="img-fluid" alt="" />
+                <img src="assets/img/propic.jpg" alt="" />
               </div>
             </div>
             <div class="col-lg-8 content">
@@ -421,8 +421,27 @@
                 <div class="col-lg-6">
                   <div class="progress">
                     <span class="skill"
-                      >Node JS, Express JS, .NET Core, Django, Python
-                      <i class="val">90%</i></span
+                      >Node JS & Express JS <i class="val">90%</i></span
+                    >
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="progress">
+                    <span class="skill"
+                      >.NET Core & .NET Framework <i class="val">90%</i></span
+                    >
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="progress">
+                    <span class="skill"
+                      >Django & Flask (Python) <i class="val">90%</i></span
                     >
                     <div class="progress-bar-wrap">
                       <div class="progress-bar" style="width: 90%"></div>
@@ -1067,6 +1086,34 @@
                 </div>
               </div>
               <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/sitshome.png"
+                    class="img-fluid"
+                    alt="" />
+                  <div class="portfolio-info">
+                    <h4>Sampath IT Solutions</h4>
+                    <a
+                      href="assets/img/portfolio/sitshome.png"
+                      title="Data Vision Studio"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="Sits.html"
+                      title="Sampath IT Solutions"
+                      class="details-link"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
             </div>
             <!-- End Portfolio Container -->
           </div>
@@ -1157,9 +1204,6 @@
       </section>
       <!-- /Services Section -->
 
-      <!-- Contact Section -->
-      <!-- <section id="contact" class="contact section"> -->
-
       <!-- Section Title -->
       <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
@@ -1203,48 +1247,109 @@
       </div>
     </div> -->
 
-      <!-- <div class="col-lg-7">
-      <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-        <div class="row gy-4">
-
-          <div class="col-md-6">
-            <label for="name-field" class="pb-2">Your Name</label>
-            <input type="text" name="name" id="name-field" class="form-control" required="">
-          </div>
-
-          <div class="col-md-6">
-            <label for="email-field" class="pb-2">Your Email</label>
-            <input type="email" class="form-control" name="email" id="email-field" required="">
-          </div>
-
-          <div class="col-md-12">
-            <label for="subject-field" class="pb-2">Subject</label>
-            <input type="text" class="form-control" name="subject" id="subject-field" required="">
-          </div>
-
-          <div class="col-md-12">
-            <label for="message-field" class="pb-2">Message</label>
-            <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-          </div>
-
-          <div class="col-md-12 text-center">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-            <button type="submit">Send Message</button>
-          </div>
-
-        </div>
-      </form>
-    </div>End Contact Form -->
-
-      <!-- </div>
-
-</div> -->
-
       <!-- </section> -->
-      <!-- /Contact Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>
+            If you'd like to work together or have any questions, feel free to
+            reach out using the form below.
+          </p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/myzjbjne"
+            method="POST"
+            class="php-email-form">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" required />
+              </div>
+              <div class="col-md-6">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  required />
+              </div>
+              <div class="col-md-12">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  required />
+              </div>
+              <div class="col-md-12">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  rows="6"
+                  class="form-control"
+                  required></textarea>
+              </div>
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </div>
+              <div class="col-md-12 pt-3">
+                <div id="formMessage" class="alert d-none" role="alert"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+      <script>
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            const messageBox = document.getElementById("formMessage");
+
+            fetch(form.action, {
+              method: form.method,
+              body: formData,
+              headers: { Accept: "application/json" },
+            })
+              .then((response) => {
+                if (response.ok) {
+                  form.reset();
+                  messageBox.textContent =
+                    "✅ Your message has been sent successfully!";
+                  messageBox.className = "alert alert-success";
+                } else {
+                  messageBox.textContent =
+                    "❌ Something went wrong. Please try again.";
+                  messageBox.className = "alert alert-danger";
+                }
+                messageBox.classList.remove("d-none");
+
+                setTimeout(() => {
+                  messageBox.classList.add("d-none");
+                }, 5000); // Hide after 5 seconds
+              })
+              .catch(() => {
+                messageBox.textContent =
+                  "❌ Network error. Please check your connection.";
+                messageBox.className = "alert alert-warning";
+                messageBox.classList.remove("d-none");
+
+                setTimeout(() => {
+                  messageBox.classList.add("d-none");
+                }, 5000);
+              });
+          });
+      </script>
     </main>
 
     <footer id="footer" class="footer position-relative light-background">
