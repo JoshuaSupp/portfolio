@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Fast Games</title>
+  <meta content="Fast Games - Browser-based game project" name="description">
+  <meta content="Fast Games, Browser Game, JavaScript, HTML5, Canvas" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/propic2.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Joshua Suppiah</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://github.com/JoshuaSupp" target="_blank" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/joshua-suppiah-a97b01219" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Fast Games</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Fast Games</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/games/fastgames.png" alt="Fast Games Home">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/games/fastgamethor.png" alt="Fast Games - Thor">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/games/fastgamesaz1.png" alt="Fast Games - AZ 1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/games/fastgamesaz2.png" alt="Fast Games - AZ 2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/games/fastgamesfb1.png" alt="Fast Games - FB 1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/games/fastgamesfb2.png" alt="Fast Games - FB 2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/games/fastgamestp1.png" alt="Fast Games - TP 1">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/games/fastgamestp2.png" alt="Fast Games - TP 2">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project Overview</h2>
+              <p>
+                <strong>Fast Games</strong> is a multiplayer browser-based gaming platform built with <strong>PixiJS</strong> for high-performance GPU-accelerated 2D rendering. The backend is powered by <strong>NestJS</strong> with <strong>MongoDB</strong> for persistent game data and <strong>Redis</strong> for real-time session and state management. The bet panel interface was built using <strong>HTML/CSS</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, delivering a polished and responsive user experience.
+              </p>
+            </div>
+
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Key Highlights</h2>
+              <ul>
+                <li><strong>PixiJS Frontend:</strong> GPU-accelerated 2D game rendering using PixiJS for smooth, high-performance visuals.</li>
+                <li><strong>NestJS Backend:</strong> Scalable and modular backend architecture built with NestJS to handle game logic and APIs.</li>
+                <li><strong>MongoDB:</strong> Flexible NoSQL database for storing player data, game sessions, and leaderboards.</li>
+                <li><strong>Redis:</strong> In-memory caching and real-time pub/sub for fast session handling and live game state sync.</li>
+                <li><strong>Bet Panel:</strong> Custom bet panel UI built with HTML/CSS, TypeScript, and Tailwind CSS for a clean, responsive experience.</li>
+                <li><strong>Cross-Platform:</strong> Runs on all modern browsers across desktop and mobile devices.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Browser Game</li>
+                <li><strong>Client</strong>: Personal Project</li>
+                <li><strong>Technologies</strong>: PixiJS, NestJS, MongoDB, Redis, TypeScript, Tailwind CSS, HTML/CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Joshua Suppiah</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
